@@ -49,29 +49,7 @@ client.get('statuses/user_timeline', params, function(error, tweets, response) {
   });
 };
 
-
-
-var pick = function(caseData, functionData) {
-  switch (caseData) {
-    case 'my-tweets':
-      myTweets();
-      break;
-    case 'spotify-this-song':
-      getMeSpotify(functionData);
-      break;
-    case 'movie-this':
-      getMeMovie(functionData);
-      break;
-    case 'do-what-it-says':
-      doWhatItSays();
-      break;
-    default:
-      console.log('LIRI doesn\'t know that');
-  }
-}
-
-
-
+// 
 var run = function(caseData, functionData) {
   switch (caseData) {
     case 'my-tweets':
